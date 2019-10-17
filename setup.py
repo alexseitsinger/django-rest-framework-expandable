@@ -12,15 +12,15 @@ INSTALL_REQUIRES = ["Django", "djangorestframework", "django_rest_framework_help
 KEYWORDS = ["django", "rest", "djangorestframework"]
 CLASSIFIERS = [
     "Development Status :: 5 - Production/Stable",
-    # Environments
-    # Frameworks
+    "Environment :: Web Environment",
+    "Framework :: Django",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: BSD License",
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 2",
     "Programming Language :: Python :: 3",
-    # Topics
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System",
 ]
 
 setup(
