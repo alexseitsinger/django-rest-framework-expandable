@@ -8,7 +8,7 @@ from rest_framework_helpers.mixins import RepresentationMixin
 
 class ExpandableModelSerializerMixin(RepresentationMixin, ExpandableMixin):
     def __init__(self, *args, **kwargs):
-        self.target_fields = kwargs.pop("target_fields", None)
+        self.expanded_fields = kwargs.pop("expanded_fields", None)
         super().__init__(*args, **kwargs)
         self.initialize_expandable_fields()
 

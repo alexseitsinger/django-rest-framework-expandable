@@ -4,7 +4,7 @@ from ..utils import sort_field_paths
 class ExpandableMixin(object):
     model_name = None
     query_param = "expand"
-    target_fields = None
+    expanded_fields = None
 
     @property
     def request(self):
@@ -72,10 +72,9 @@ class ExpandableMixin(object):
         requested_fields = self.params
 
         # Add our target fields that we specified on the class.
-        if isinstance(self.target_fields, list):
-            for target_field in self.target_fields:
-                requested_fields.append(target_field)
+        if isinstance(self.expanded_fields, list):
+            for field_path in self.expanded_fields:
+                requested_fields.append(field_path)
 
         requested_fields = sort_field_paths(requested_fields)
-        print(requested_fields)
         return requested_fields
