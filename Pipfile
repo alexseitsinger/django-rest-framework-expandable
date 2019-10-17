@@ -4,6 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+django = "*"
+djangorestframework = "*"
+django-rest-framework-helpers = {editable = true,file = "file:///usr/home/main/mnt/da0/code/packages/python/library/active/django-rest-framework-helpers"}
+pytest = "*"
 
 [packages]
 
