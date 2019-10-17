@@ -1,3 +1,10 @@
+<a name="v0.2.0"></a>
+## [v0.2.0](https://github.com/alexseitsinger/django-rest-framework-expandable/compare/v0.1.2...v0.2.0) (2019-10-17)
+
+### Code Refactoring
+- Renamed class property. ([05cb5a1](https://github.com/alexseitsinger/django-rest-framework-expandable/commit/05cb5a16c09013a29c8097cfebaefd182a888626))
+
+
 <a name="v0.1.2"></a>
 ## [v0.1.2](https://github.com/alexseitsinger/django-rest-framework-expandable/compare/v0.1.1...v0.1.2) (2019-10-17)
 
