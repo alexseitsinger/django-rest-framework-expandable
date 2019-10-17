@@ -1,3 +1,10 @@
+<a name="v0.1.2"></a>
+## [v0.1.2](https://github.com/alexseitsinger/django-rest-framework-expandable/compare/v0.1.1...v0.1.2) (2019-10-17)
+
+### Bug Fixes
+- Fixes import. ([b92de0c](https://github.com/alexseitsinger/django-rest-framework-expandable/commit/b92de0c7dbe718acb084b7153a48365eca2f734f))
+
+
 <a name="v0.1.1"></a>
 ## [v0.1.1](https://github.com/alexseitsinger/django-rest-framework-expandable/compare/v0.1.0...v0.1.1) (2019-10-17)
 
