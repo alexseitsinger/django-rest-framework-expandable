@@ -3,6 +3,14 @@ from django.db.models import Manager
 from django.db.models.query import QuerySet
 
 
+def get_class_name(obj=None):
+    # Get name of parent object.
+    if obj is None:
+        return "Unnamed"
+    else:
+        return obj.__class__.__name__
+
+
 class HashableList(list):
     def __hash__(self):
         return id(self)
