@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "064fba0b67434ee9b01eca7b3c33d9d474e83fbf1916a80035ba3df3fe4fc09a"
+            "sha256": "644c46680de19683a370d8abe0b8b2d4dfe1bc252db8446cda34fdfc1cb83551"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -40,8 +40,12 @@
             "version": "==2.2.6"
         },
         "django-rest-framework-helpers": {
-            "editable": true,
-            "file": "file:///usr/home/main/mnt/da0/code/packages/python/library/active/django-rest-framework-helpers"
+            "hashes": [
+                "sha256:3100df0c4f372f6726961968ee6306e6622c9f4aef79bbc7e2f4ec5f9685ec4b",
+                "sha256:92ac454cd8e1b8903a52f78e28a6d3e53de43c662b1caccfd70d642fab647fa2"
+            ],
+            "index": "pypi",
+            "version": "==8.3.1"
         },
         "djangorestframework": {
             "hashes": [
