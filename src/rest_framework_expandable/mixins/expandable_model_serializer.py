@@ -3,7 +3,7 @@ from rest_framework.relations import ManyRelatedField
 
 from .expandable import ExpandableMixin
 from .expandable_related_field import ExpandableRelatedFieldMixin
-from ...mixins import RepresentationMixin
+from rest_framework_helpers.mixins import RepresentationMixin
 
 
 class ExpandableModelSerializerMixin(RepresentationMixin, ExpandableMixin):
