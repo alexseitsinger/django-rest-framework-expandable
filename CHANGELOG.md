@@ -1,3 +1,13 @@
+<a name="v0.5.0"></a>
+## [v0.5.0](https://github.com/alexseitsinger/django-rest-framework-expandable/compare/v0.4.1...v0.5.0) (2019-12-15)
+
+### Bug Fixes
+- Allows for read_only fields. ([e681d1e](https://github.com/alexseitsinger/django-rest-framework-expandable/commit/e681d1e1c6b126a6b979b509002606fda0a54e54))
+
+### Code Refactoring
+- Fixes query params. ([d086d4c](https://github.com/alexseitsinger/django-rest-framework-expandable/commit/d086d4c5bc60a69340a0ceb2aba2488728bfeef8))
+
+
 <a name="v0.4.1"></a>
 ## [v0.4.1](https://github.com/alexseitsinger/django-rest-framework-expandable/compare/v0.4.0...v0.4.1) (2019-10-17)
 
