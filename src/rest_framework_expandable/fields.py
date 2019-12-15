@@ -3,7 +3,8 @@ from .mixins.expandable_related_field import ExpandableRelatedFieldMixin
 
 
 class ExpandableHyperlinkedRelatedField(
-    ExpandableRelatedFieldMixin, HyperlinkedRelatedField
+    ExpandableRelatedFieldMixin,
+    HyperlinkedRelatedField,
 ):
     pass
 
