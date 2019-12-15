@@ -25,6 +25,13 @@ class ExpandableRelatedFieldMixin(ExpandableMixin):
     comparison_field_name = "uuid"
 
     def __init__(self, *args, **kwargs):
+        # When we set read_only on the related field instance, the queryset attribute
+        # will raise an exception. So, to avoid this, reset the queryset attribute to
+        # None to allow these instances to be read_only when specified.
+        read_only = kwargs.get("read_only", False)
+        if read_only is True:
+            setattr(self, "queryset", None)
+
         for name in self.initialized_attrs:
             kwarg = kwargs.pop(name, None)
             if kwarg is not None:
