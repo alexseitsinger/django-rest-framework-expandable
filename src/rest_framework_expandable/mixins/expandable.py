@@ -22,17 +22,20 @@ class ExpandableMixin(object):
         return request
 
     @property
+    def all_query_params(self):
+        return getattr(self.request, "query_params", getattr(self.request, "GET", {}))
+
+    @property
     def params(self):
         """
         Returns a list of unique relative field paths that should be used for expanding.
         """
         field_paths = []
 
-        attr_name = getattr(self, "query_param", None)
-        if attr_name is not None:
-            query_params = getattr(self.request, "query_params", {})
-            query_params = query_params.get(attr_name, "").split(",")
-            for param in query_params:
+        target_param = getattr(self, "query_param", None)
+        if target_param is not None:
+            values = self.all_query_params.get(target_param, "").split(",")
+            for param in values:
                 field_paths.append(param)
 
         return sort_field_paths(field_paths)
