@@ -12,3 +12,6 @@ __pycache__/
 .tox
 .cache
 .env
+
+# Development artifacts
+.mypy_cache
