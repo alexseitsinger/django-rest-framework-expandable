@@ -1,4 +1,4 @@
-from rest_framework.relations import ManyRelatedField
+from rest_framework.relations import ManyRelatedField, PKOnlyObject
 from django.db.models import Manager
 from django.db.models.query import QuerySet
 from django.utils.module_loading import import_string
@@ -327,6 +327,8 @@ class ExpandableRelatedFieldMixin(ExpandableMixin):
         """
         if isinstance(obj, Manager):
             obj = obj.all()
+        elif isinstance(obj, PKOnlyObject):
+            obj = self.queryset.get(pk=obj.pk)
 
         expanded = None
         target_fields = self.get_target_field_names(paths)
